@@ -1,2 +1,4 @@
 # Lab-07
-Write your names here.
+Michael Jones
+Michael Catterall
+Dean Cheng
