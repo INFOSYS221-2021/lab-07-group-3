@@ -1,34 +1,40 @@
-// Example object and print statements
 
-// Create your JavaScript objects
-let person = {
-   firstName: "Snow",
-   lastName: "White",
-   isFiction: true,
-   age: 18,
-   address: {
-      streetAddress: "7 Fairytale Lane",
-      city: "Fairytale Forest"
-   },
-   phoneNumbers:[
-      {
-         type: "home",
-         number: "01 123-4567"
-      },
-      {
-         type: "office",
-         number: "01 555-4567"
-      },
-      {
-         type: "mobile",
-         number: "028 456-7890"
-      }
-   ],
-   spouse: null
-} 
-
-// print different properties of your objects
-console.log("First name of person: " + person.firstName);
-for (i in person.phoneNumbers) {
-    console.log("Phone number: " + person.phoneNumbers[i].number);
+let student = {
+	id: 42069,
+	firstName: "John",
+  lastName: "Cena",
+  username: "jcen420",
+  courseList: [],
+  major: [],
+  degree: []
 }
+
+let course = {
+	title: "InfoSys221",
+  category: "InfoSys",
+  categoryNumber: 6,
+  description: "A course where we type code.",
+  semester: 1
+}
+
+let classRoster = {
+	students: [],
+  courseID: "InfoSys221",
+  gradeList: {
+  	42069: {user:"jcena420", grades: []}
+  }
+}
+
+
+
+let student1 = student
+student1.id = 1
+student.firstName = "Michael"
+student.lastName = "Smith"
+student.username = "MSMT123"
+const infosys = course
+student.courseList = [infosys]
+
+console.log(student)
+console.log(course)
+console.log(classRoster)
